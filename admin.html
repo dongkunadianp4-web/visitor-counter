@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>運営管理</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="admin">
+  <main class="admin-page">
+    <section id="loginBox" class="card">
+      <h1>運営管理</h1>
+      <p>運営用パスワードを入力してください。</p>
+      <form id="loginForm">
+        <input id="password" type="password" autocomplete="current-password" placeholder="パスワード" required>
+        <button type="submit">ログイン</button>
+      </form>
+      <p id="loginMessage" class="message"></p>
+    </section>
+
+    <section id="dashboard" class="card hidden">
+      <img src="assets/main.jpg" alt="案内画像" class="admin-image">
+      <div class="stats">
+        <div>
+          <span>現在の入場者数</span>
+          <strong id="currentCount">-</strong>
+        </div>
+        <div>
+          <span>累計入場者数</span>
+          <strong id="totalCount">-</strong>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="refresh">更新</button>
+        <button id="manualIn">手動で +1</button>
+        <button id="manualOut">手動で -1</button>
+        <button id="logout" class="secondary">ログアウト</button>
+      </div>
+      <p id="dashboardMessage" class="message"></p>
+    </section>
+  </main>
+  <script src="assets/config.js"></script>
+  <script src="assets/admin.js"></script>
+</body>
+</html>
