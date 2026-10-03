@@ -22,3 +22,10 @@ button:hover { filter: brightness(.95); }
   .admin-page { padding: 12px; }
   .stats strong { font-size: 32px; }
 }
+
+.main-image {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+}
